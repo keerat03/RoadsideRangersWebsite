@@ -2,6 +2,7 @@ html {
     font-size: 62.5%;
     /*Rem units will scale off of this*/
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth
 }
 
 :root {
@@ -63,191 +64,193 @@ header {
     background-size: cover;
     padding-bottom: 15em;
     font-weight: 500;
-
-    & nav {
-
-        padding-top: 3rem;
-
-        .wrapper {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-size: 1.6rem;
-
-            .iphone-menu {
-                display: none;
-            }
-
-            & ul {
-                display: flex;
-                list-style: none;
-
-
-                & li {
-                    margin-left: 5rem;
-
-                    & a {
-                        text-decoration: none;
-                        color: white;
-
-
-                    }
-
-                }
-
-                .cta_nav {
-                    padding: 1rem 2rem;
-                    padding: 1rem 2.5rem;
-                    background-color: var(--companyColor);
-                    border-radius: 2rem;
-                }
-
-                .cta_nav :hover {
-                    background-color: #0e0707;
-                }
-            }
-
-        }
-    }
-
-    .hero {
-
-
-        color: white;
-        padding-top: 20rem;
-        padding-bottom: 15rem;
-
-        & h1 {
-            font-size: 7rem;
-            margin: 0;
-
-        }
-
-        & h2 {
-            font-size: 4rem;
-            font-weight: 400;
-            margin: 0.8rem 0;
-            margin-right: 10rem;
-        }
-
-        .hero-review {
-
-            margin-bottom: 3rem;
-            font-size: 1.8rem;
-
-            & img {
-                height: 1.5rem;
-            }
-
-            & span {
-                margin-left: 1rem;
-            }
-        }
-
-        .cta_hero {
-
-            font-size: 1.6rem;
-            margin-top: 4rem;
-
-            .one {
-                color: white;
-                text-decoration: none;
-                padding: 1.5rem 2rem;
-                background-color: var(--companyColor);
-                margin-right: 2rem;
-            }
-
-            .two {
-                color: white;
-                text-decoration: none;
-                padding-bottom: 0.3rem;
-                border-bottom: 0.3rem solid var(--companyColor);
-
-            }
-        }
-    }
 }
 
-.badges {
+header nav {
+
+    padding-top: 3rem;
+}
+
+nav .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.6rem;
+}
+
+nav .iphone-menu {
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+
+}
+
+nav ul li {
+    margin-left: 5rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
 
 
-    .wrapper {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
+}
 
-    }
+.cta_nav {
 
+
+    padding: 1rem 2rem;
+    padding: 1rem 2.5rem;
     background-color: var(--companyColor);
+    border-radius: 2rem;
+}
 
-    .badge {
+.cta_nav ::hover {
+    background-color: #0e0707;
+}
 
-        text-align: center;
-        color: white;
-        font-size: 1rem;
-        padding: 2rem 0rem;
 
-        & p {
-            margin: .5rem 0;
-        }
+.hero {
 
-        & img {
-            height: 4rem;
-        }
 
-    }
+    color: white;
+    padding-top: 20rem;
+    padding-bottom: 15rem;
+}
 
+.hero h1 {
+    font-size: 7rem;
+    margin: 0;
+
+}
+
+.hero h2 {
+    font-size: 4rem;
+    font-weight: 400;
+    margin: 0.8rem 0;
+    margin-right: 10rem;
+}
+
+.hero-review {
+
+    margin-bottom: 3rem;
+    font-size: 1.8rem;
+}
+
+.hero-review img {
+    height: 1.5rem;
+}
+
+.hero-review img {
+    margin-left: 1rem;
+}
+
+
+.cta_hero {
+
+    font-size: 1.6rem;
+    margin-top: 4rem;
+}
+
+.cta_hero .one {
+    color: white;
+    text-decoration: none;
+    padding: 1.5rem 2rem;
+    background-color: var(--companyColor);
+    margin-right: 2rem;
+}
+
+.cta_hero .two {
+    color: white;
+    text-decoration: none;
+    padding-bottom: 0.3rem;
+    border-bottom: 0.3rem solid var(--companyColor);
+
+}
+
+
+.badges {
+    background-color: var(--companyColor);
+}
+
+.badges .wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.badges .badge {
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    padding: 2rem 0rem;
+}
+
+.badges .badge p {
+    margin: .5rem 0;
+
+}
+
+.badges .badge img {
+    height: 4rem;
 
 }
 
 .services {
 
     padding-bottom: 13rem;
+}
 
-    & h1 {
-        text-align: center;
-        margin-bottom: 8rem;
-    }
+.services h1 {
+    text-align: center;
+    margin-bottom: 8rem;
+}
 
-    & h3 {
-        margin-top: 5rem;
-    }
+.services h3 {
+    margin-top: 5rem;
+}
 
-    .list {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+.services .list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: auto;
+    /* align-items: center; */
+}
 
-        & div {
+.services .list div {
 
-            text-align: center;
-            padding: 8rem 5rem;
-            box-shadow: 0 0 10px -5px #000000;
-            border-radius: 5rem;
+    text-align: center;
+    padding: 8rem 5rem;
+    box-shadow: 0 0 10px -5px #000000;
+    border-radius: 5rem;
+    flex-basis: 20%;
+}
 
-            & img {
-                height: 10rem;
-
-            }
-
-            & p {
-                font-size: 1.4rem;
-                padding: 0rem 5rem;
-            }
-
-        }
-
-        .one {
-            margin-right: 10rem;
-        }
-
-        .three {
-            margin-left: 10rem;
-        }
-    }
-
+.services .list div img {
+    height: 10rem;
 
 }
+
+.services .list div p {
+    font-size: 1.4rem;
+    padding: 0rem 5rem;
+}
+
+
+/* 
+.services .list .one {
+    margin-right: 10rem;
+}
+
+.services .list .three {
+    margin-left: 10rem;
+} */
+
 
 .about {
 
@@ -259,31 +262,29 @@ header {
     padding-top: 6rem;
     padding-bottom: 10rem;
     text-align: center;
+}
 
-    & h1 {
-        margin: 3rem 0;
-    }
+.about h1 {
+    margin: 3rem 0;
+}
 
-    & h2 {
-        margin-bottom: 4rem;
-    }
+.about h2 {
+    margin-bottom: 4rem;
+}
 
-    & p {
-        /* margin-bottom: 5rem; */
-        margin: auto 2rem 8rem 2rem;
-        padding: 0rem 20rem;
-    }
+.about p {
+    /* margin-bottom: 5rem; */
+    margin: auto 2rem 8rem 2rem;
+    padding: 0rem 20rem;
+}
 
 
-    & a {
-        color: white;
-        background-color: var(--companyColor);
-        padding: 2rem 2rem;
-        text-decoration: none;
-        font-size: 1.6rem;
-
-    }
-
+.about a {
+    color: white;
+    background-color: var(--companyColor);
+    padding: 2rem 2rem;
+    text-decoration: none;
+    font-size: 1.6rem;
 
 }
 
@@ -292,6 +293,255 @@ header {
     text-align: center;
     padding-top: 8rem;
     padding-bottom: 0rem;
+}
+
+.scroll {
+
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 40%;
+    overflow-x: scroll;
+    overscroll-behavior-inline: contain;
+    margin-top: 6rem;
+    gap: 4rem;
+    margin-left: -40rem;
+
+    padding: 15rem 0;
+}
+
+.scroll-element {
+
+    padding-bottom: 5rem;
+}
+
+.scroll-element-back {
+
+    position: relative;
+    height: 23rem;
+    width: 70rem;
+}
+
+.scroll-element-text {
+    text-align: center;
+    padding: 3rem 3rem;
+    padding-bottom: 7rem;
+    /* Position */
+    left: 5rem;
+    position: absolute;
+    top: 8rem;
+
+    /* Size */
+    height: 60%;
+    width: 80%;
+
+    z-index: 3;
+    border-radius: 3rem;
+    background: #414141;
+}
+
+.scroll-element-text p {
+    color: white;
+    font-weight: bold;
+    padding: 0rem 4rem;
+}
+
+.scroll-element-text h3 {
+    margin-bottom: 0;
+    color: var(--companyColor);
+}
+
+
+.scroll-element-back::before {
+    background: #5f98ec;
+    content: '';
+    border-radius: 3rem;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("about-us-medium.jpeg");
+
+
+    /* Position */
+    top: -12rem;
+    left: -3rem;
+    position: absolute;
+    /* transform: translate(0rem, 0rem); */
+
+    /* Size */
+    height: 150%;
+    width: 110%;
+
+    /* Display under the main content */
+    z-index: 1;
+}
+
+
+
+.fleet {
+
+    text-align: center;
+
+    padding-top: 4rem;
+    margin-bottom: 15rem;
+}
+
+.fleet h3 {
+    text-align: center;
+}
+
+.fleet h2 {
+    margin: 5rem auto;
+}
+
+.fleet h1 {
+    text-align: center;
+
+}
+
+.fleet .seperate {
+    padding-bottom: 2rem;
+    height: 2rem;
+    border-bottom: 0.5rem solid #414141;
+    margin-bottom: 10rem;
+
+
+}
+
+
+
+.fleet .elements div {
+    box-shadow: 0 0 10px -5px #000000;
+    border-radius: 1rem;
+    padding: 5rem 15rem;
+    /* margin-bottom: 5em; */
+    margin: auto 20rem 5rem 20rem;
+}
+
+.fleet .elements h2 {
+    margin: 1rem 0;
+    color: var(--companyColor);
+}
+
+
+
+
+
+.final {
+
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+    padding: 2rem 0;
+    background-color: var(--companyColor);
+}
+
+.final span {
+    color: white;
+}
+
+.final a {
+    text-decoration: underline;
+    color: white;
+}
+
+
+.footer {
+
+    text-align: center;
+    background-color: rgb(22, 19, 19);
+    padding: 4rem 0;
+    color: white;
+}
+
+.footer .icons {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.footer .icons.one {
+    margin: 0;
+}
+
+.footer .icons img {
+    height: 2rem;
+    margin-left: 6rem;
+}
+
+
+
+
+.menu {
+    color: white;
+    margin-bottom: 3rem;
+}
+
+.menu ul {
+
+
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.menu ul a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu ul li {
+    margin-left: 5rem;
+}
+
+.menu ul .nav-item-one {
+    margin-left: 0;
+}
+
+
+
+.footer P {
+    font-size: 1rem;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1550px) {
+
+
+
+    .services .list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .services .list div {
+
+        text-align: center;
+        padding: 8rem 5rem;
+        box-shadow: 0 0 10px -5px #000000;
+        border-radius: 5rem;
+        flex-basis: 22%;
+    }
+
+    .services .list div p {
+        padding: 0;
+    }
+
+    .fleet .elements div {
+        box-shadow: 0 0 10px -5px #000000;
+        border-radius: 1rem;
+        padding: 5rem 15rem;
+        /* margin-bottom: 5em; */
+        margin: auto 10rem 5rem 10rem;
+    }
+
+    .about p {
+        padding: 0 0;
+    }
 
     .scroll {
 
@@ -301,588 +551,721 @@ header {
         overflow-x: scroll;
         overscroll-behavior-inline: contain;
         margin-top: 6rem;
-        gap: 4rem;
+        gap: 10rem;
         margin-left: -40rem;
-
+    
         padding: 15rem 0;
-
-        .scroll-element {
-
-            padding-bottom: 5rem;
-
-
-            .scroll-element-back {
-
-                position: relative;
-                height: 23rem;
-                width: 70rem;
-
-
-                .scroll-element-text {
-                    text-align: center;
-                    padding: 3rem 3rem;
-                    padding-bottom: 7rem;
-                    /* Position */
-                    left: 5rem;
-                    position: absolute;
-                    top: 8rem;
-
-                    /* Size */
-                    height: 60%;
-                    width: 80%;
-
-                    z-index: 3;
-                    border-radius: 3rem;
-                    background: #414141;
-
-                    & p {
-                        color: white;
-                        font-weight: bold;
-                        padding: 0rem 4rem;
-                    }
-
-                    & h3 {
-                        margin-bottom: 0;
-                        color: var(--companyColor);
-                    }
-
-                }
-
-            }
-
-            .scroll-element-back::before {
-                background: #5f98ec;
-                content: '';
-                border-radius: 3rem;
-                background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("about-us-medium.jpeg");
-
-
-                /* Position */
-                top: -12rem;
-                left: -3rem;
-                position: absolute;
-                /* transform: translate(0rem, 0rem); */
-
-                /* Size */
-                height: 150%;
-                width: 110%;
-
-                /* Display under the main content */
-                z-index: 2;
-            }
-
-        }
-
-
-    }
-
-
-}
-
-.fleet {
-
-    text-align: center;
-
-    padding-top: 4rem;
-    margin-bottom: 15rem;
-
-    & h3 {
-        text-align: center;
-    }
-
-    & h2 {
-        margin: 5rem auto;
-    }
-
-    & h1 {
-        text-align: center;
-
-    }
-
-    .seperate {
-        padding-bottom: 2rem;
-        height: 2rem;
-        border-bottom: 0.5rem solid #414141;
-        margin-bottom: 10rem;
-
-
-    }
-
-    .elements {
-
-        & div {
-            box-shadow: 0 0 10px -5px #000000;
-            border-radius: 1rem;
-            padding: 5rem 15rem;
-            /* margin-bottom: 5em; */
-            margin: auto 20rem 5rem 20rem;
-        }
-
-        & h2 {
-            margin: 1rem 0;
-            color: var(--companyColor);
-        }
-
-    }
-
-
-}
-
-.final {
-
-    text-align: center;
-    font-size: 4rem;
-    font-weight: bold;
-    padding: 2rem 0;
-    background-color: var(--companyColor);
-
-    & span {
-        color: white;
-    }
-
-    & a {
-        text-decoration: underline;
-        color: white;
     }
 }
 
-.footer {
-
-    text-align: center;
-    background-color: rgb(22, 19, 19);
-    padding: 4rem 0;
-    color: white;
-
-    .icons {
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 3rem;
-
-        .one {
-            margin: 0;
-        }
-
-        & img {
-            height: 2rem;
-            margin-left: 6rem;
-        }
-
-
-    }
-
-    .menu {
-        color: white;
-        margin-bottom: 3rem;
-
-        & ul {
-
-
-            display: flex;
-            justify-content: center;
-            list-style: none;
-            padding: 0;
-
-            & a {
-                text-decoration: none;
-                color: white;
-            }
-
-            & li {
-                margin-left: 5rem;
-            }
-
-            .nav-item-one {
-                margin-left: 0;
-            }
-
-        }
-
-
-
-
-    }
-
-    & P {
-        font-size: 1rem;
-    }
-
-
-}
-
-@media screen and (max-width: 420px) {
-    /*iphone 11 pro max*/
+@media screen and (max-width: 1350px) {
 
     .wrapper {
-        padding: 0 5rem;
-    }
-
-
-    .nav-bar {
-        display: none;
-
-    }
-
-    :root {
-        --companyColor: #d37434;
-    }
-
-    .wrapper {
-        padding: 0 4rem;
-        /* text-align: center; */
-    }
-
-    nav .wrapper {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-    }
-
-    nav {
-        padding-top: 6rem;
-        margin-bottom: 10rem;
-        font-size: 1.2rem;
-    }
-
-    .iphone-menu {
-        display: block;
-        height: 1.6rem;
-    }
-
-    .hero h1 {
-        font-size: 2rem;
-    }
-
-    .hero {
-        padding: 4rem 0rem;
-    }
-
-    .services img {
-        height: 10rem;
-    }
-
-    .hero h1 {
-        font-size: 2.8rem;
-    }
-
-    .hero h2 {
-        font-size: 1.8rem;
-        font-weight: 550;
-    }
-
-    .hero-review {
-        margin-bottom: 3rem;
-    }
-
-    .hero .hero-review img {
-        height: 1rem;
-    }
-
-    .cta_hero .one {
-        color: white;
-        text-decoration: none;
-        padding: 1.5rem 2rem;
-        background-color: var(--companyColor);
-        margin-right: 2rem;
-    }
-
-    .cta_hero .two {
-        color: white;
-        text-decoration: none;
-        padding-bottom: 0.3rem;
-        border-bottom: 0.3rem solid var(--companyColor);
-    }
-
-    .badges {
-        background-color: var(--companyColor);
-        padding: 3rem 0rem;
-        color: white;
-
-    }
-
-    .badges p {
-        font-size: 1rem;
-    }
-
-    .badges .wrapper {
-        display: flex;
-        justify-content: space-between;
-        text-align: center;
-    }
-
-    .badges img {
-        height: 3rem;
-    }
-
-    .badges .five,
-    .six {
-        display: none;
-    }
-
-    .services {
-        padding-top: 5rem;
-    }
-
-    .services h1 {
-        font-size: 3rem;
-        text-align: center;
-    }
-
-    .services h3 {
-        font-size: 1.6rem;
+        padding: 0 20rem;
     }
 
     .services .list {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-between;
     }
 
     .services .list div {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+
         text-align: center;
+        padding: 6rem 3rem;
         box-shadow: 0 0 10px -5px #000000;
         border-radius: 5rem;
-        padding: 4rem 3rem;
-        margin-bottom: 5rem;
-
+        flex-basis: 25%;
     }
 
-    .about {
-        text-align: center;
-        padding-top: 5rem;
-        padding-bottom: 10rem;
+    .services .wrapper {
+        padding: 0 15rem;
     }
 
-    .about h1 {
-        font-size: 2.5rem;
-
-    }
-
-    .about h2 {
-        font-size: 1.8rem;
-        font-weight: 540;
-        padding: 2rem 1rem;
-    }
-
-    .about h3 {
-        font-size: 1.6rem;
-    }
-
-    .about p {
-        margin-bottom: 6rem;
+    .services .list div p {
         padding: 0;
-        font-size: 1.5rem;
-    }
-
-    .about a {
-        color: white;
-        background-color: var(--companyColor);
-        padding: 2rem 2rem;
-        text-decoration: none;
-        font-size: 1.6rem;
-    }
-
-    .testimonials {
-        padding-top: 5rem;
-    }
-
-    .testimonials h3 {
-        font-size: 1.6rem;
-    }
-
-    .testimonials h1 {
-        font-size: 3rem;
-    }
-
-
-    .fleet h1 {
-        font-size: 2.5rem;
-        margin-bottom: 3rem;
-
-    }
-
-    .fleet h2 {
-        font-size: 2rem;
-        font-weight: 550s;
-        margin-bottom: 3rem;
-    }
-
-    .fleet h3 {
-        margin-bottom: 4rem;
-    }
-
-    .fleet .elements h2 {
-        color: var(--companyColor);
-        font-size: 1.8;
     }
 
     .fleet .elements div {
         box-shadow: 0 0 10px -5px #000000;
         border-radius: 1rem;
-        padding: 5rem 4rem;
-        margin-bottom: 5rem;
+        padding: 5rem 15rem;
         /* margin-bottom: 5em; */
-
+        margin: auto 5rem 5rem 5rem;
     }
 
-    .fleet p {
-        font-size: 1.4rem;
+    .about p {
+        padding: 0 0;
     }
+    .scroll {
 
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 40%;
+        overflow-x: scroll;
+        overscroll-behavior-inline: contain;
+        margin-top: 6rem;
+        gap: 12rem;
+        margin-left: -40rem;
     
-    .final {
-        font-size: 1.6rem;
-        color: white;
+        padding: 15rem 0;
     }
 
-    .final a {
-        text-decoration: none;
-        color: white;
-        border-bottom: 1px solid white;
+}
 
+
+
+@media screen and (max-width: 1280px) {
+    .services .list {
+        flex-direction: column;
     }
 
-    .footer p {
-        font-size: 1rem;
-    }
+    .services .list div {
 
-    .footer .icons {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-
-
-    }
-
-    .footer img {
-        height: 2rem;
-    }
-
-    .footer .one {
-        margin-right: 4rem;
-    }
-
-    .footer .three {
-        margin-left: 4rem;
-    }
-
-    .footer ul {
-        display: flex;
-        list-style: none;
-        justify-content: space-around;
-        align-items: center;
-        padding: 2rem 0;
-
-    }
-
-    .footer a {
-        text-decoration: none;
-        color: white;
-        /* margin-left: 2rem; */
-    }
-
-
-    .testimonials {
         text-align: center;
-        padding-top: 8rem;
-        padding-bottom: 0rem;
-        margin-bottom: 0;
+        padding: 4rem 6rem;
+        box-shadow: 0 0 10px -5px #000000;
+        border-radius: 5rem;
+        flex-basis: 20%;
+        margin: 2rem 3rem
+    }
+
+
+    .fleet .elements div {
+        box-shadow: 0 0 10px -5px #000000;
+        border-radius: 1rem;
+        padding: 5rem 15rem;
+        /* margin-bottom: 5em; */
+        margin: auto 0rem 3rem 0rem;
+    }
+
+    .nav-bar {
+        display: none;
+    }
+
+    nav .iphone-menu{
+        display: inline;
+        height: 2rem;
+
     }
 
     .scroll {
 
         display: grid;
         grid-auto-flow: column;
-        grid-auto-columns: 25%;
+        grid-auto-columns: 45%;
         overflow-x: scroll;
         overscroll-behavior-inline: contain;
-        margin-top: 3rem;
-        gap: 20rem;
+        margin-top: 6rem;
+        gap: 8rem;
         margin-left: -40rem;
+    
+        padding: 15rem 0;
+    }
+    
+    
+    
 
-        padding-top: 15rem;
-        padding-bottom: 0;
-        margin-bottom: -8rem;
+
+
+
+}
+
+@media screen and (max-width: 1150px) {
+
+    h1 {
+        font-size: 4rem;
     }
 
+    .hero h1 {
+        font-size: 6rem;
+    }
+
+    
+
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .wrapper {
+        padding: 0 8rem
+    }
+
+    .fleet .elements div {
+        box-shadow: 0 0 10px -5px #000000;
+        border-radius: 1rem;
+        padding: 5rem 7rem;
+        /* margin-bottom: 5em; */
+        margin: auto 0rem 3rem 0rem;
+    }
+
+    .badges .six {
+        display: none;
+    }
+    .scroll {
+
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 33%;
+        overflow-x: scroll;
+        overscroll-behavior-inline: contain;
+        margin-top: 6rem;
+        gap: 30rem;
+        margin-left: -40rem;
+    
+        padding: 15rem 0;
+    }
     .scroll-element {
 
         padding-bottom: 5rem;
     }
-
+    
     .scroll-element-back {
-
+    
         position: relative;
-        height: 35rem;
-        width: 35rem;
+        height: 20rem;
+        width: 60rem;
     }
-
-
+    
     .scroll-element-text {
         text-align: center;
         padding: 3rem 3rem;
+        padding-bottom: 11rem;
         /* Position */
-        left: 0rem;
+        left: 5rem;
         position: absolute;
         top: 8rem;
-
+    
         /* Size */
-        height: 40%;
+        height: 60%;
         width: 80%;
-
+    
         z-index: 3;
         border-radius: 3rem;
         background: #414141;
-
-     
-
-        
-
     }
+    
     .scroll-element-text p {
         color: white;
-        font-weight: 500;
-        font-size: 1rem;
-        padding: 0rem 0rem;
+        font-weight: bold;
+        padding: 0rem 4rem;
     }
+    
     .scroll-element-text h3 {
         margin-bottom: 0;
-        font-size: 1rem;
         color: var(--companyColor);
     }
-
-
-
+    
+    
     .scroll-element-back::before {
         background: #5f98ec;
         content: '';
         border-radius: 3rem;
         background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("about-us-medium.jpeg");
-
-
+    
+    
         /* Position */
-        top: -8rem;
-        left: -2.5rem;
+        top: -12rem;
+        left: -1rem;
         position: absolute;
         /* transform: translate(0rem, 0rem); */
-
+    
         /* Size */
-        height: 70%;
+        height: 150%;
         width: 110%;
-
+    
         /* Display under the main content */
-        z-index: 2;
+        z-index: 1;
+    }
+    
+}
+
+@media screen and (max-width: 800px) {
+
+    h1 { 
+        font-size: 4rem;
     }
 
+    .hero h1 {
+        font-size: 6rem;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .wrapper {
+        padding: 0 8rem
+    }
+
+    .fleet .elements div {
+        box-shadow: 0 0 10px -5px #000000;
+        border-radius: 1rem;
+        padding: 5rem 7rem;
+        /* margin-bottom: 5em; */
+        margin: auto 0rem 3rem 0rem;
+    }
+
+    .badges .six {
+        display: none;
+    }
+
+    .badges .five {
+        display: none;
+    }
+    .final {
+        font-size: 3rem;
+    }
+
+    .scroll {
+
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 33%;
+        overflow-x: scroll;
+        overscroll-behavior-inline: contain;
+        margin-top: 6rem;
+        gap:25rem;
+        margin-left: -40rem;
+    
+        padding: 15rem 0;
+    }
+    .scroll-element {
+
+        padding-bottom: 5rem;
+    }
+    
+    .scroll-element-back {
+    
+        position: relative;
+        height: 10rem;
+        width: 50rem;
+    }
+    
+    .scroll-element-text {
+        text-align: center;
+        padding: 3rem 3rem;
+        padding-bottom: 11rem;
+        /* Position */
+        left: 5rem;
+        position: absolute;
+        top: 8rem;
+    
+        /* Size */
+        height: 60%;
+        width: 80%;
+    
+        z-index: 3;
+        border-radius: 3rem;
+        background: #414141;
+    }
+    
+    .scroll-element-text p {
+        color: white;
+        /* font-weight: bold; */
+        padding: 0rem 4rem;
+        font-size: 1.2rem;
+
+    }
+    
+    .scroll-element-text h3 {
+        margin-bottom: 0;
+        color: var(--companyColor);
+        font-size: 1.2rem;
+
+    }
+    
+    
+    .scroll-element-back::before {
+        background: #5f98ec;
+        content: '';
+        border-radius: 3rem;
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("about-us-medium.jpeg");
+    
+    
+        /* Position */
+        top: -8rem;
+        left: -1rem;
+        position: absolute;
+        /* transform: translate(0rem, 0rem); */
+    
+        /* Size */
+        height: 250%;
+        width: 110%;
+    
+        /* Display under the main content */
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width: 650px) {
 
 
+     
+    .services {
+        padding-bottom:8rem;
+    }
+
+    .fleet .elements div {
+        box-shadow: 0 0 10px -5px #000000;
+        border-radius: 1rem;
+        padding: 5rem 7rem;
+        /* margin-bottom: 5em; */
+        margin: auto 0rem 3rem 0rem;
+    }
+
+    .services .list div {
+
+        text-align: center;
+        padding: 4rem 3rem;
+        box-shadow: 0 0 10px -5px #000000;
+        border-radius: 5rem;
+        flex-basis: 20%;
+        margin: 2rem 3rem
+    }
+
+    .services .wrapper h1 {
+        margin-bottom: 3rem;
+    }
+
+    .final {
+        font-size: 3rem;
+    }
+     .scroll {
+
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 33%;
+        overflow-x: scroll;
+        overscroll-behavior-inline: contain;
+        margin-top: 6rem;
+        gap:30rem;
+        margin-left: -40rem;
+    
+        padding: 15rem 0;
+    }
+    .scroll-element {
+
+        padding-bottom: 5rem;
+    }
+    
+    .scroll-element-back {
+    
+        position: relative;
+        height: 10rem;
+        width: 50rem;
+    }
+    
+    .scroll-element-text {
+        text-align: center;
+        padding: 3rem 3rem;
+        padding-bottom: 11rem;
+        /* Position */
+        left: 5rem;
+        position: absolute;
+        top: 8rem;
+    
+        /* Size */
+        height: 60%;
+        width: 80%;
+    
+        z-index: 3;
+        border-radius: 3rem;
+        background: #414141;
+    }
+    
+    .scroll-element-text p {
+        color: white;
+        /* font-weight: bold; */
+        padding: 0rem 4rem;
+        font-size: 1.2rem;
+
+    }
+    
+    .scroll-element-text h3 {
+        margin-bottom: 0;
+        color: var(--companyColor);
+        font-size: 1.2rem;
+
+    }
+    
+    
+    .scroll-element-back::before {
+        background: #5f98ec;
+        content: '';
+        border-radius: 3rem;
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("about-us-medium.jpeg");
+    
+    
+        /* Position */
+        top: -8rem;
+        left: -1rem;
+        position: absolute;
+        /* transform: translate(0rem, 0rem); */
+    
+        /* Size */
+        height: 250%;
+        width: 110%;
+    
+        /* Display under the main content */
+        z-index: 1;
+    }
+
+}
+
+@media screen and (max-width: 520px) {
+    .final {
+        font-size: 2.5rem;
+    }
+     .scroll {
+
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 33%;
+        overflow-x: scroll;
+        overscroll-behavior-inline: contain;
+        margin-top: 6rem;
+        gap:25rem;
+        margin-left: -40rem;
+    
+        padding: 15rem 0;
+    }
+    .scroll-element {
+
+        padding-bottom: 5rem;
+    }
+    
+    .scroll-element-back {
+    
+        position: relative;
+        height: 15rem;
+        width: 40rem;
+    }
+    
+    .scroll-element-text {
+        text-align: center;
+        padding: 3rem 3rem;
+        padding-bottom: 12rem;
+        /* Position */
+        left: 5rem;
+        position: absolute;
+        top: 8rem;
+    
+        /* Size */
+        height: 30%;
+        width: 90%;
+    
+        z-index: 3;
+        border-radius: 3rem;
+        background: #414141;
+    }
+    
+    .scroll-element-text p {
+        color: white;
+        /* font-weight: bold; */
+        padding: 0rem 2rem;
+        font-size: 1.2rem;
+
+    }
+    
+    .scroll-element-text h3 {
+        margin-bottom: 0;
+        color: var(--companyColor);
+        font-size: 1.2rem;
+
+    }
+    
+    
+    .scroll-element-back::before {
+        background: #5f98ec;
+        content: '';
+        border-radius: 3rem;
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("about-us-medium.jpeg");
+    
+    
+        /* Position */
+        top: -7rem;
+        left: 1.7rem;
+        position: absolute;
+        /* transform: translate(0rem, 0rem); */
+    
+        /* Size */
+        height: 150%;
+        width: 120%;
+    
+        /* Display under the main content */
+        z-index: 1;
+    }
+}
 
 
+@media screen and (max-width: 480px) {
+    .hero h1{
+        font-size: 5rem;
+    }
+    .wrapper {
+        padding: 0 5rem
+    }
+
+    .services .list div {
+
+        text-align: center;
+        padding: 4rem 3rem;
+        box-shadow: 0 0 10px -5px #000000;
+        border-radius: 5rem;
+        flex-basis: 20%;
+        margin: 2rem 1rem
+    }
+     .scroll {
+
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 33%;
+        overflow-x: scroll;
+        overscroll-behavior-inline: contain;
+        margin-top: 6rem;
+        gap:25rem;
+        margin-left: -40rem;
+    
+        padding: 15rem 0;
+    }
+    .scroll-element {
+
+        padding-bottom: 5rem;
+    }
+    
+    .scroll-element-back {
+    
+        position: relative;
+        height: 10rem;
+        width: 40rem;
+    }
+    
+    .scroll-element-text {
+        text-align: center;
+        padding: 3rem 3rem;
+        padding-bottom: 11rem;
+        /* Position */
+        left: 5rem;
+        position: absolute;
+        top: 8rem;
+    
+        /* Size */
+        height: 60%;
+        width: 80%;
+    
+        z-index: 3;
+        border-radius: 3rem;
+        background: #414141;
+    }
+    
+    .scroll-element-text p {
+        color: white;
+        /* font-weight: bold; */
+        padding: 0rem 2rem;
+        font-size: 1.2rem;
+
+    }
+    
+    .scroll-element-text h3 {
+        margin-bottom: 0;
+        color: var(--companyColor);
+        font-size: 1.2rem;
+
+    }
+    
+    
+    .scroll-element-back::before {
+        background: #5f98ec;
+        content: '';
+        border-radius: 3rem;
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("about-us-medium.jpeg");
+    
+    
+        /* Position */
+        top: -8rem;
+        left: 1.5rem;
+        position: absolute;
+        /* transform: translate(0rem, 0rem); */
+    
+        /* Size */
+        height: 250%;
+        width: 110%;
+    
+        /* Display under the main content */
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    
+    h1{
+        font-size: 3rem;
+    }
+
+    h2{
+        font-size: 2rem;
+    }
+    .wrapper {
+        padding: 0 4rem
+    }
+
+    .testimonials h1{
+        padding: 0 4rem;
+    }
+
+    .hero h1{
+        font-size: 4rem;
+    }
+
+    .hero h2{
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .hero {
+        font-size: 1.6rem;
+    }
+
+    .services .list div {
+
+        text-align: center;
+        padding: 4rem 3rem;
+        box-shadow: 0 0 10px -5px #000000;
+        border-radius: 5rem;
+        flex-basis: 20%;
+        margin: 2rem 0rem
+    }
+
+    .hero .wrapper h2 {
+        margin-right: 0;
+    }
+
+    .badges .four {
+        display: none;
+    }
+
+    .services .wrapper {
+        padding: 0 6rem;
+    }
+
+    .fleet .elements div {
+        box-shadow: 0 0 10px -5px #000000;
+        border-radius: 1rem;
+        padding: 5rem 5rem;
+        /* margin-bottom: 5em; */
+        margin: auto 0rem 3rem 0rem;
+    }
+
+    .final {
+        font-size: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 375px){
+    .services .wrapper {
+        padding: 0 5rem;
+    }
 }
